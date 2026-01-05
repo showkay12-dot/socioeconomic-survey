@@ -58,8 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
       payload
     }).then(() => {
       // End of household forms
-      window.location.href = "dashboard.html";
+      window.location.href = "photo.html";
     });
   });
 
 });
+
