@@ -38,11 +38,12 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("form1a").addEventListener("submit", e => {
     e.preventDefault();
 
+    // 🔑 PAYLOAD FIX — MATCHES BACKEND EXACTLY
     const payload = {
 
-      village: sessionStorage.getItem("village"),
+      villageName: sessionStorage.getItem("village"),
 
-      general: [
+      villageInfo: [
         val("villageUnit"),
         val("buffer"),
         val("tehsil"),
@@ -53,12 +54,12 @@ document.addEventListener("DOMContentLoaded", () => {
         val("ufsArea")
       ],
 
-      tofTable: tofRows
+      treeDetails: tofRows
     };
 
     callAPI({
       action: "saveForm1AData",
-      payload
+      payload: payload
     }).then(() => {
       window.location.href = "form2a.html";
     });
