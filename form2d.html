@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form-2(D) : Annual Fodder Consumption</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>FORM–2(D) : ANNUAL FODDER CONSUMPTION</h2>
+
+<form id="form2d">
+
+<!-- ===== HOUSEHOLD IDENTIFICATION ===== -->
+<div class="section">
+  <label>1. Village Name</label>
+  <input id="villageName">
+
+  <label>2. House No.</label>
+  <input id="houseNo">
+</div>
+
+<!-- ===== GOVERNMENT SCHEMES (FODDER / FEED) ===== -->
+<div class="section">
+  <label>3. Do you get livestock feed / fodder under any Government scheme? (Yes-1 / No-2)</label>
+  <input id="govtFeed">
+
+  <label>3.1 Name of the Scheme</label>
+  <input id="feedSchemeName">
+
+  <label>3.3 Frequency (per month)</label>
+  <input id="feedFrequency">
+</div>
+
+<div class="section">
+  <label>4. Do you get fodder seed under Govt. scheme for plantation in your farm? (Yes-1 / No-2)</label>
+  <input id="fodderSeed">
+
+  <label>4.1 Name of the Scheme</label>
+  <input id="seedSchemeName">
+
+  <label>4.2 Quantity of fodder obtained (kgs)</label>
+  <input id="seedQty">
+
+  <label>4.3 Frequency (per month)</label>
+  <input id="seedFrequency">
+</div>
+
+<!-- ===== OWN FARM / GRAZING DETAILS ===== -->
+<div class="section">
+  <label>5. If grazing is done in own farm / agricultural land (outside forest)</label>
+
+  <label>5.1 How much land is owned by the HH (ha)</label>
+  <input id="landOwned">
+
+  <label>5.2 Is fodder produced along with other crops? (Yes-1 / No-2)</label>
+  <input id="fodderWithCrops">
+</div>
+
+<div class="section">
+  <label>6. Are cattle sent for grazing in forest? (Yes-1 / No-2)</label>
+  <input id="forestGrazing">
+
+  <label>6.1 If NO, reason</label>
+  <input id="noForestReason">
+</div>
+
+<div class="section">
+  <label>7. Do you collect fodder from forest? (Yes-1 / No-2)</label>
+  <input id="collectForestFodder">
+</div>
+
+<!-- ===== FODDER CONSUMPTION TABLE ===== -->
+<div class="section">
+  <h3>Details of Fodder Collected from Forest</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Period Code</th>
+        <th>Animal Code</th>
+        <th>Total Number</th>
+        <th>Big (No.)</th>
+        <th>Small (No.)</th>
+        <th>Stall Feeding</th>
+        <th>Lopping</th>
+        <th>Grazing</th>
+        <th>Remarks</th>
+      </tr>
+    </thead>
+    <tbody id="fodderTable"></tbody>
+  </table>
+
+  <input id="periodCode" placeholder="Period Code">
+  <input id="animalCode" placeholder="Animal Code">
+  <input id="totalNo" placeholder="Total Number">
+  <input id="bigNo" placeholder="Big">
+  <input id="smallNo" placeholder="Small">
+  <input id="stallFeeding" placeholder="Stall Feeding">
+  <input id="lopping" placeholder="Lopping">
+  <input id="grazing" placeholder="Grazing">
+  <input id="remarks" placeholder="Remarks">
+
+  <button type="button" class="primary" id="addFodderBtn">Add Row</button>
+</div>
+
+<button type="submit" class="submit">SUBMIT FORM-2(D)</button>
+
+</form>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/form2d.js"></script>
+
+</body>
+</html>

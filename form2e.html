@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form-2(E) : NTFP Collection</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>FORM–2(E) : NTFP (including MADPs) Collection</h2>
+
+<form id="form2e">
+
+<!-- ===== HOUSEHOLD IDENTIFICATION ===== -->
+<div class="section">
+  <label>1. Village Name</label>
+  <input id="villageName">
+
+  <label>2. House No.</label>
+  <input id="houseNo">
+
+  <label>3. Do you collect NTFP from forests? (Yes-1 / No-2)</label>
+  <input id="collectNTFP">
+</div>
+
+<!-- ===== NTFP COLLECTION TABLE ===== -->
+<div class="section">
+  <h3>Details of NTFP Collection</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Species Collected</th>
+        <th>Period Code</th>
+        <th>Mode of Collection</th>
+        <th>Estimated Annual Collection (Unit / Kg)</th>
+        <th>Utilized for Personal Use</th>
+        <th>For Sale</th>
+        <th>Harvesting Sustainable (Yes/No)</th>
+      </tr>
+    </thead>
+    <tbody id="ntfpTable"></tbody>
+  </table>
+
+  <input id="species" placeholder="Species">
+  <input id="periodCode" placeholder="Period Code">
+  <input id="modeCollection" placeholder="Mode of Collection">
+  <input id="annualQty" placeholder="Annual Quantity (Kg)">
+  <input id="personalUse" placeholder="Personal Use">
+  <input id="forSale" placeholder="For Sale">
+  <input id="sustainable" placeholder="Sustainable (Yes/No)">
+
+  <button type="button" class="primary" id="addNTFPBtn">Add Row</button>
+</div>
+
+<button type="submit" class="submit">SUBMIT FORM-2(E)</button>
+
+</form>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/form2e.js"></script>
+
+</body>
+</html>

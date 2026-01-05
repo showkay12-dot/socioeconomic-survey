@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Household Photo & Geo-Tag</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>FINAL STEP : Enumerator Photo & Geo-Tag</h2>
+
+<form id="photoForm">
+
+<div class="section">
+  <label>Village Name</label>
+  <input id="villageName" readonly>
+
+  <label>House No.</label>
+  <input id="houseNo" readonly>
+
+  <label>Enumerator Team</label>
+  <input id="teamName" readonly>
+</div>
+
+<div class="section">
+  <h3>Capture Photo</h3>
+  <input type="file" id="photoInput" accept="image/*" capture="camera">
+</div>
+
+<div class="section">
+  <h3>Geo-Location</h3>
+  <p id="locationStatus">Fetching location…</p>
+
+  <input id="latitude" placeholder="Latitude" readonly>
+  <input id="longitude" placeholder="Longitude" readonly>
+</div>
+
+<button type="submit" class="submit">SUBMIT & FINISH</button>
+
+</form>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/photo.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form-1 : Village Information</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>FORM–1 : Village Information</h2>
+
+<form id="form1">
+
+<!-- ================= BASIC INFORMATION ================= -->
+<div class="section">
+  <h3>1. Basic Village Information</h3>
+
+  <label>Name of Village / IV Unit and OFS Block No</label>
+  <input id="villageName">
+
+  <label>Buffer / Stratum</label>
+  <input id="bufferStratum">
+
+  <label>Name of Tehsil / Town</label>
+  <input id="tehsil">
+
+  <label>Name of Gram Panchayat</label>
+  <input id="panchayat">
+
+  <label>Name of Revenue Block</label>
+  <input id="revenueBlock">
+
+  <label>Forest Range with Division</label>
+  <input id="forestRange">
+
+  <label>Forest Block</label>
+  <input id="forestBlock">
+</div>
+
+<!-- ================= POPULATION ================= -->
+<div class="section">
+  <h3>2. Population</h3>
+
+  <label>Male</label><input id="popMale">
+  <label>Female</label><input id="popFemale">
+  <label>Children (below 15 years)</label><input id="popChildren">
+  <label>Total</label><input id="popTotal">
+</div>
+
+<!-- ================= HOUSEHOLD CATEGORY ================= -->
+<div class="section">
+  <h3>3. Category of Households</h3>
+
+  <label>BPL Households</label><input id="hhBPL">
+  <label>APL Households</label><input id="hhAPL">
+  <label>Other Category (specify)</label><input id="hhOtherCat">
+</div>
+
+<!-- ================= HOUSEHOLD SIZE ================= -->
+<div class="section">
+  <h3>4. Household Size</h3>
+
+  <label>Total Households</label><input id="totalHH">
+  <label>Average Household Size</label><input id="avgHHSize">
+</div>
+
+<!-- ================= OCCUPATION ================= -->
+<div class="section">
+  <h3>5. Occupation Pattern</h3>
+
+  <table>
+    <thead>
+      <tr><th>Primary Occupation</th><th>No. of Households</th></tr>
+    </thead>
+    <tbody id="occupationTable"></tbody>
+  </table>
+
+  <input id="occName" placeholder="Occupation">
+  <input id="occHH" placeholder="Households">
+  <button type="button" class="primary" id="addOccupationBtn">Add Row</button>
+</div>
+
+<!-- ================= LAND USE ================= -->
+<div class="section">
+  <h3>6. Land Use Pattern (Area in ha)</h3>
+
+  <table>
+    <thead>
+      <tr><th>Type of Land</th><th>Area (ha)</th></tr>
+    </thead>
+    <tbody id="landUseTable"></tbody>
+  </table>
+
+  <input id="luType" placeholder="Land Type">
+  <input id="luArea" placeholder="Area">
+  <button type="button" class="primary" id="addLandUseBtn">Add Row</button>
+</div>
+
+<!-- ================= LAND HOLDING ================= -->
+<div class="section">
+  <h3>7. Land Holding</h3>
+
+  <table>
+    <thead>
+      <tr><th>Land Category</th><th>No. of Households</th></tr>
+    </thead>
+    <tbody id="landHoldingTable"></tbody>
+  </table>
+
+  <input id="lhCat" placeholder="Category">
+  <input id="lhHH" placeholder="Households">
+  <button type="button" class="primary" id="addLandHoldingBtn">Add Row</button>
+</div>
+
+<!-- ================= FOREST RIGHTS ================= -->
+<div class="section">
+  <h3>8. Rights on Forest Land</h3>
+
+  <label>Individual Rights (No. & Extent)</label><input id="indRights">
+  <label>Community Rights (No. & Extent)</label><input id="comRights">
+  <label>Development Rights (No. & Extent)</label><input id="devRights">
+</div>
+
+<!-- ================= DRINKING WATER ================= -->
+<div class="section">
+  <h3>9. Drinking Water Sources</h3>
+
+  <table>
+    <thead>
+      <tr><th>Source</th><th>Dependent Households</th></tr>
+    </thead>
+    <tbody id="waterDrinkTable"></tbody>
+  </table>
+
+  <input id="wdSource" placeholder="Source">
+  <input id="wdHH" placeholder="Households">
+  <button type="button" class="primary" id="addWaterDrinkBtn">Add Row</button>
+</div>
+
+<!-- ================= IRRIGATION ================= -->
+<div class="section">
+  <h3>10. Irrigation Sources</h3>
+
+  <table>
+    <thead>
+      <tr><th>Source</th><th>Dependence</th></tr>
+    </thead>
+    <tbody id="waterIrrTable"></tbody>
+  </table>
+
+  <input id="wiSource" placeholder="Source">
+  <input id="wiVal" placeholder="Dependence">
+  <button type="button" class="primary" id="addWaterIrrBtn">Add Row</button>
+</div>
+
+<!-- ================= LIVELIHOOD ================= -->
+<div class="section">
+  <h3>11. Livelihood Opportunities from Forests (% HHs)</h3>
+
+  <label>Employment</label><input id="livEmployment">
+  <label>Ecotourism</label><input id="livEcotourism">
+  <label>Fuelwood</label><input id="livFuelwood">
+  <label>Other NTFP</label><input id="livNTFP">
+</div>
+
+<!-- ================= INFORMANT ================= -->
+<div class="section">
+  <h3>12. Information Provider</h3>
+
+  <label>Name</label><input id="informantName">
+  <label>Type</label><input id="informantType">
+  <label>Gender</label><input id="informantGender">
+  <label>Age</label><input id="informantAge">
+  <label>Occupation</label><input id="informantOccupation">
+  <label>Education</label><input id="informantEducation">
+
+  <label>Remarks</label><input id="remarks">
+
+  <label>Interviewer Name</label><input id="interviewerName">
+  <label>Designation</label><input id="interviewerDesignation">
+  <label>Group Members</label><input id="groupMembers">
+  <label>Date</label><input id="surveyDate" type="date">
+</div>
+
+<button type="submit" class="submit">SUBMIT FORM-1</button>
+
+</form>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/form1.js"></script>
+
+</body>
+</html>

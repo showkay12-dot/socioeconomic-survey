@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>Survey Dashboard</h2>
+
+<div class="section">
+  <label>Village Name</label>
+  <input id="villageName">
+
+  <button class="primary" id="startBtn">Start / Resume Survey</button>
+</div>
+
+<script>
+document.getElementById("startBtn").addEventListener("click", () => {
+  const v = document.getElementById("villageName").value.trim();
+  if (!v) {
+    alert("Enter village name");
+    return;
+  }
+  sessionStorage.setItem("village", v);
+  window.location.href = "form1.html";
+});
+</script>
+
+</body>
+</html>

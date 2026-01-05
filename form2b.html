@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form-2(B) : Annual Small Timber Consumption</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>FORM-2(B) : ANNUAL SMALL TIMBER CONSUMPTION</h2>
+
+<form id="form2b">
+
+<!-- ================= HOUSEHOLD INFO ================= -->
+<div class="section">
+  <label>1. Village Name</label>
+  <input id="villageName">
+
+  <label>2. House No.</label>
+  <input id="houseNo">
+
+  <label>3. Do you collect small timber from forests? (Yes-1 / No-2)</label>
+  <input id="collectST">
+</div>
+
+<!-- ================= SMALL TIMBER TABLE ================= -->
+<div class="section">
+  <h3>Small Timber Consumption Details</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Small Timber</th>
+        <th>Small Timber Code</th>
+        <th>Item Code</th>
+        <th>Sub Code</th>
+        <th>Size Class</th>
+        <th>Number</th>
+      </tr>
+    </thead>
+    <tbody id="stTable"></tbody>
+  </table>
+
+  <!-- Paper uses fixed value “1” for Small Timber -->
+  <input id="stCode" placeholder="Small Timber Code">
+  <input id="itemCode" placeholder="Item Code">
+  <input id="subCode" placeholder="Sub Code">
+  <input id="sizeClass" placeholder="Size Class">
+  <input id="number" placeholder="Number">
+
+  <button type="button" class="primary" id="addSTBtn">Add Row</button>
+</div>
+
+<button type="submit" class="submit">SUBMIT FORM-2(B)</button>
+
+</form>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/form2b.js"></script>
+
+</body>
+</html>

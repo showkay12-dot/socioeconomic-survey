@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form-2(F) : Availability of Timber in TOF</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>FORM–2(F) : Availability of Timber in Trees Outside Forests (TOF)</h2>
+
+<form id="form2f">
+
+<!-- ===== HOUSEHOLD IDENTIFICATION ===== -->
+<div class="section">
+  <label>1. Tehsil / Town Name</label>
+  <input id="tehsilName">
+
+  <label>2. Village name / IV unit and UFS Block No</label>
+  <input id="villageName">
+
+  <label>3. House No.</label>
+  <input id="houseNo">
+
+  <label>
+    4. Whether the household is owner of timber species  
+    (Yes-1 / No-2)
+  </label>
+  <input id="ownerTimber">
+</div>
+
+<!-- ===== TOF TIMBER TABLE ===== -->
+<div class="section">
+  <h3>2(F) Availability of timber in TOF</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>S. No.</th>
+        <th>Species Code</th>
+        <th>Species Name</th>
+        <th>Diameter at Breast Height (1.37 m)</th>
+        <th>Purpose of Cutting</th>
+        <th>Permission Required / Exempted</th>
+        <th>Remarks</th>
+      </tr>
+    </thead>
+    <tbody id="tofTimberTable"></tbody>
+  </table>
+
+  <input id="sno" placeholder="S. No.">
+  <input id="speciesCode" placeholder="Species Code">
+  <input id="speciesName" placeholder="Species Name">
+  <input id="dbh" placeholder="DBH (cm)">
+  <input id="cutPurpose" placeholder="Purpose of Cutting">
+  <input id="permission" placeholder="Permission / Exempted">
+  <input id="remarks" placeholder="Remarks">
+
+  <button type="button" class="primary" id="addTOFTimberBtn">
+    Add Row
+  </button>
+</div>
+
+<button type="submit" class="submit">SUBMIT FORM-2(F)</button>
+
+</form>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/form2f.js"></script>
+
+</body>
+</html>

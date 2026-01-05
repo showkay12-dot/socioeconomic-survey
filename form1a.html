@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form-1A : Trees on Non-Private Land</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>FORM-1A : Village Information – Trees on Non-Private Land</h2>
+
+<form id="form1a">
+
+<!-- ================= GENERAL INFORMATION ================= -->
+<div class="section">
+  <h3>General Information</h3>
+
+  <label>Name of Village / IV Unit and UFS Block No</label>
+  <input id="villageUnit">
+
+  <label>Buffer / Stratum</label>
+  <input id="buffer">
+
+  <label>Name of Tehsil / Town</label>
+  <input id="tehsil">
+
+  <label>Name of Gram Panchayat</label>
+  <input id="gp">
+
+  <label>Name of Revenue Block</label>
+  <input id="revBlock">
+
+  <label>Forest Range with Division</label>
+  <input id="rangeDivision">
+
+  <label>Forest Block</label>
+  <input id="forestBlock">
+</div>
+
+<!-- ================= ENUMERATION OF TOF ================= -->
+<div class="section">
+  <h3>Enumeration of TOF (Trees on Non-Private Land)</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>S. No</th>
+        <th>Species Name</th>
+        <th>Code</th>
+        <th>DBH</th>
+        <th>Crown Diameter (m)</th>
+        <th>Ownership</th>
+        <th>Category of Plantation</th>
+      </tr>
+    </thead>
+    <tbody id="tofTable"></tbody>
+  </table>
+
+  <input id="tofSno" placeholder="S. No">
+  <input id="tofSpecies" placeholder="Species Name">
+  <input id="tofCode" placeholder="Code">
+  <input id="tofDbh" placeholder="DBH">
+  <input id="tofCrown" placeholder="Crown Diameter (m)">
+  <input id="tofOwner" placeholder="Ownership">
+  <input id="tofCategory" placeholder="Category of Plantation">
+
+  <button type="button" class="primary" id="addTOFBtn">Add Row</button>
+</div>
+
+<!-- ================= AREA ================= -->
+<div class="section">
+  <label>Area of the UFS Block Surveyed</label>
+  <input id="ufsArea">
+</div>
+
+<button type="submit" class="submit">SUBMIT FORM-1A</button>
+
+</form>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/form1a.js"></script>
+
+</body>
+</html>
